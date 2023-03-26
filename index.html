@@ -97,18 +97,18 @@ function dispalyGreetings(today){
         hrs = today.getHours();
         name="Hannah"
         if (hrs < 12)
-            greet = 'Bom dia  'Hannah;
+            greet = 'Good Morning  '+name;
         else if (hrs >= 12 && hrs <= 17)
-            greet = 'Boa tarde 'Hannah;
+            greet = 'Good Afternoon '+name;
         else if (hrs >= 17 && hrs <= 24)
-            greet = 'Boa Noite  'Hannah;
+            greet = 'Good Evening  '+name;
         document.getElementById('greet').innerHTML = greet;
 
     }
 
     function dispalyDate(today) {  
        
-        const days = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado'];
+        const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
         const monthNames = ["January", "February", "March", "April", "May", "June",
   "July", "August", "September", "October", "November", "December"
 ];
